@@ -251,7 +251,7 @@ main{
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  z-index: 5;
 }
 
 .btn svg { width: 18px; height: 18px; }
@@ -272,4 +272,5 @@ main{
   font-optical-sizing: auto;
   font-weight: 700;
 }
+
 
