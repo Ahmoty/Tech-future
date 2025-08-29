@@ -6,7 +6,7 @@
     <title>Tech Future</title>
     <link rel="icon" href="./designs/tech future logo.svg" />
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -22,8 +22,8 @@
         <ul>
           <li><a class="menu-link" href="#intro">Home</a></li>
           <li><a class="menu-link" href="#about">About</a></li>
-          <li><a class="menu-link" href="#">Speakers</a></li>
-          <li><a class="menu-link" href="#">Schedule</a></li>
+          <li><a class="menu-link" href="#speaker-text">Speakers</a></li>
+          <li><a class="menu-link" href="#schedule-text">Schedule</a></li>
           <li><a class="menu-link" href="#">Tickets</a></li>
           <li><a class="menu-link" href="#">Contact</a></li>
         </ul>
@@ -31,7 +31,7 @@
 
       <div id="intro">
         <figure>
-          <img id="logo" src="./designs/tech future logo.png" alt="" />
+          <img id="logo" src="./designs/tech future logo.svg" alt="" />
         </figure>
         <h1 class="home-intro-text">
           Shaping the Next Generation of Innovation.
@@ -39,20 +39,106 @@
         <p id="scroll-text">scroll for more informations</p>
       </div>
     </header>
+
+    <div id="about">
+      <h2 id="about-text">About the Event</h2>
+      <p class="event-description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+        obcaecati corporis, natus atque non praesentium, quaerat quibusdam optio
+        consequuntur sapiente officiis similique alias commodi! Ea illum tenetur
+        corrupti quidem doloremque.
+      </p>
+    </div>
+    <div class="event-speakers">
+      <h2 id="speaker-text">Our speakers</h2>
+    </div>
+    <div></div>
+
     <main>
-      <div id="about">
-        <h2 id="about-text">About the Event</h2>
-        <p class="event-description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
-          obcaecati corporis, natus atque non praesentium, quaerat quibusdam
-          optio consequuntur sapiente officiis similique alias commodi! Ea illum
-          tenetur corrupti quidem doloremque.
-        </p>
-      </div>
-      <div class="event-speakers">
-        <h2 id="speaker-text">Our speakers</h2>
-        <img src="" alt="">
+      <div class="carousel" aria-label="Image carousel">
+        <button class="btn prev" aria-label="Previous" id="btnPrev">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polyline
+              points="15 6 9 12 15 18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="track"
+          id="track"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Items"
+        >
+          <div class="item">
+            <div class="avatar">
+              <img src="./designs/Face 1.jpeg" alt="Maya" />
+            </div>
+            <div class="caption">David</div>
+          </div>
+
+          <div class="item">
+            <div class="avatar">
+              <img src="./designs/Face 2.jpeg" alt="Noah" />
+            </div>
+            <div class="caption">Tom</div>
+          </div>
+
+          <div class="item">
+            <div class="avatar">
+              <img src="./designs/Face 8.jpeg" alt="Olivia" />
+            </div>
+            <div class="caption">Jason</div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./designs/Face 4.jpeg" alt="Olivia" />
+            </div>
+            <div class="caption">Mark</div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./designs/Face 5.jpeg" alt="Olivia" />
+            </div>
+            <div class="caption">Sam</div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./designs/Face 6.jpeg" alt="Olivia" />
+            </div>
+            <div class="caption">Peter</div>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./designs/Face 7.jpeg" alt="Olivia" />
+            </div>
+            <div class="caption">Andrew</div>
+          </div>
+        </div>
+
+        <button class="btn next" aria-label="Next" id="btnNext">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <polyline
+              points="9 6 15 12 9 18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </main>
+    <div class="schedule-section">
+      <h2 id="schedule-text">Event Schedule</h2>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
